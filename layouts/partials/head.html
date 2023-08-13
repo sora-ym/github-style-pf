@@ -8,6 +8,9 @@
     <link rel="stylesheet" href='{{ "css/light.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/dark.css" | absURL }}' />
     <link rel="stylesheet" href='{{ "css/syntax.css" | absURL }}' />
+    <link rel="stylesheet" href='{{ "css/syntax.css" | absURL }}' />
+    <link rel="stylesheet" media="screen and (max-width:480px)" href='{{ "css/user-add-sp.css" | absURL }}' />
+    <link rel="stylesheet" media="screen and (min-width:480px)" href='{{ "css/user-add-pc.css" | absURL }}' />
     <title>{{ if .IsHome }}{{ else }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
     {{ if .Site.Params.favicon }}
     <link rel="icon" type="image/x-icon" href='{{ .Site.Params.favicon  }}'>
@@ -18,4 +21,5 @@
 
     <!-- Extended head section-->
     {{ partial "extended_head.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 </head>

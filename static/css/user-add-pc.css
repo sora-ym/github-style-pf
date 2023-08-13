@@ -1,0 +1,17 @@
+
+img {
+    max-width: 100%;
+    height: auto;
+    }
+
+.column-left{
+  float: left;
+  width: 47.5%;
+  text-align: left;
+}
+
+.column-right{
+  float: right;
+  width: 47.5%;
+  text-align: left;
+}
